@@ -1,0 +1,41 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: bisque;
+}
+h1{
+    color: goldenrod;
+    size: 50px;
+    padding: 50px;
+    text-align: center;
+    background-color: bisque;
+    font-style: oblique;
+}
+form {
+    background-color: bisque;
+   
+}
+form label{
+    margin-left: 25px;
+    color: goldenrod;
+    font-style: oblique;
+    font-style: Bold;
+    font-size: 25px;
+}
+form button{
+    padding: 10px;
+    border-color: beige;
+    font-style: oblique;
+
+    background-color: goldenrod;
+}
+form input{
+    border-color: beige;
+    background-color: aliceblue;
+}
+#result-container{
+    color: red;
+    font-size: 30px;
+    font-style: oblique;
+}
+

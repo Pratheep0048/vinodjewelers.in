@@ -1,0 +1,1008 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kalnia', serif;
+   
+    
+    
+}
+.header{
+ min-height: 100vh;
+ width: 100%;
+ background-image: linear-gradient(rgba(1, 4, 14, 0.7),rgba(1, 3, 11, 0.7)),url("finback.png");
+ background-position: center;
+ background-size: cover;  
+ position: relative;
+}
+.header img{
+    height: 200px;
+    font-weight: 200px;
+    display: inline-flex;
+}
+#vino{
+    color: goldenrod;
+    display: inline-flex;
+    position: relative;
+    bottom: 80px;
+    left: 20px;
+    font-size: 40px;
+}
+#jel{
+    color: silver;
+    display: inline-flex;
+    position: relative;
+    bottom: 80px;
+    left: 40px;
+    font-size: 40px;
+}
+.nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex:1;
+    text-align: center;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    bottom: 150px;
+    left: 390px;;
+}
+.nav-links ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: gold;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.textbox{
+    width: 99%;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.textbox h1{
+    display: block;
+    font-size: 60px;
+}
+.textbox p{
+    margin: 10px 0 40px;
+    font-size: 16px;
+    color: #fff;
+}
+.button1{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.button1:hover{
+    border: 1px solid goldenrod;
+    background: goldenrod;
+    transition: 1s;
+}
+
+
+/* SECTION 2 */
+.models{
+    width:80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+}
+.models h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.models p{
+    color:silver;
+    font-size: 16px;
+    font-style: bold;
+    line-height: 22px;
+    padding: 15px;
+}
+#mod{
+    color: black;
+}
+
+.rows{
+    margin-top:5%;
+    display:flex;
+    justify-content: space-between;
+}
+.col1{
+    flex-basis: 31%;
+    background:rgb(63, 61, 61);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transform: 0.5s;
+
+}
+.col1 h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color:goldenrod;
+
+}
+
+.col1:hover{
+    box-shadow:0 0 25px 5px rgba(18, 18, 17, 0.2);
+}
+
+
+
+/*SECTION 3*/
+.orders {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.orders h1 {
+  font-size: 50px;
+}
+
+.orders p {
+  padding: 30px;
+}
+
+.row1 {
+  display: flex;
+  flex-wrap: wrap; /* Added to allow items to wrap to the next line */
+  justify-content: space-evenly;
+}
+
+.row1 img {
+  border-radius: 10px;
+  margin-bottom: 15px; /* Increased margin for better spacing */
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Adjusted to take full width of the container */
+  max-width: 280px; /* Added max-width for responsiveness */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 0; /* Removed margin-right to avoid positioning error */
+  transition: transform 0.2s;
+}
+
+.row1 img:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+/* Adjusted styling for g2, g3, and g4 */
+#g2,
+#g3,
+#g4 {
+  border-radius: 10px;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 280px;
+  height: 350px;
+  margin-right: 0;
+}
+
+/* Adjusted margin-right for h4 elements */
+.cols1 h4,
+.col2 h4,
+.col3 h4,
+.col4 h4 {
+  margin-right: 0;
+}
+
+
+/*offer */
+
+.offer {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.off {
+  display: flex;
+  flex-direction: row; /* Updated to display in a single line */
+  justify-content: space-around; /* Adjusted for better spacing */
+}
+
+/* Common styles for image containers */
+.offer1 img,
+.del img,
+.loan img {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  display: block;
+  margin-right: 50px; /* Retained for spacing between images */
+  margin-bottom: 30px;
+  border-radius: 9%;
+  justify-content: space-evenly;
+}
+
+/* Common styles for text containers */
+.offer1,
+.del,
+.loan {
+  padding-top: 30px;
+  text-align: center;
+  flex-basis: 100%;
+}
+
+.offer1 h3,
+.del h3,
+.loan h3 {
+  margin-right: 100px; /* Adjusted margin for heading */
+}
+
+.offer1 p,
+.del p,
+.loan p {
+  margin-right: 20px;
+  text-align: left;
+}
+
+
+    /*section4*/
+    .customer{
+        width: 80%;
+        margin: auto;
+        padding-top: 100px;
+        text-align: center;
+    }
+    .custom{
+        display: flex;
+        margin-top: 5%;
+        justify-content: space-between;
+
+    }
+
+    .cust1 img{
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+        
+    }
+    
+
+   
+    
+    .cust1{
+        flex-basis: 44%;
+        border-radius: 10px;
+        margin-bottom: 100px;
+        background-color:rgb(63, 61, 61);
+        padding: 25px;
+        padding-bottom: 5%;
+        cursor: pointer;
+        display: flex;
+
+    }
+    .cust1 h3 {
+        position: absolute;
+        margin-top: 12px;
+        left: 270px; /* Adjust the margin as needed */
+        color: black;
+      }
+      .cust1 p{
+        text-align: left;
+        color: silver;
+      }
+    
+      
+    #cus2{
+       
+        left: 900px; /* Adjust the margin as needed */
+        color: black;
+        
+    
+    }
+    .star{
+        position: absolute;
+        margin-left: 1%;
+        color: goldenrod;
+    }
+    #star1{
+        position: absolute;
+        margin-left: 1%;
+        margin-top: 40px;
+        color: goldenrod;
+    }
+    .customer1{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 5%;
+        
+    }
+
+
+
+
+    .contactform{
+        position: absolute;
+        left: 800px;
+        top: 490%;
+        
+    }.about {
+      background-color: #262726;
+      width: 100%;
+      margin: auto;
+    }
+    
+    .contact {
+      margin-top: 40px;
+      padding: 20px;
+    }
+    
+    .contact .detail {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .contact .detail .box {
+      position: relative;
+      padding: 10px;
+      display: flex;
+      margin-bottom: 20px;
+    }
+    
+    .text h3 {
+      color: silver;
+    }
+    
+    .contact .detail .box .icon {
+      min-width: 40px;
+      height: 40px;
+      background: #efefef;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      font-size: 14px;
+    }
+    
+    .contact .detail .box .text {
+      display: flex;
+      margin-left: 10px;
+      font-size: 12px;
+      flex-direction: column;
+      font-weight: 300;
+      color: goldenrod;
+    }
+    
+        
+    .contactform {
+        background-color: rgb(63, 61, 61); /* Set form background color to dark gray */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: color(rgb(238, 237, 237)); /* Add subtle box shadow */
+        width: 500px;
+        position:relative;
+        left: 50%;
+        bottom: 280px;
+        
+      }
+  
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+  
+      h2 {
+        color: silver; /* Set text color to white */
+        text-align: center;
+      }
+  
+      .inputbox {
+        position: relative;
+        margin-bottom: 20px;
+      }
+  
+      input, textarea {
+        width: 90%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(252, 252, 252); /* Set input background color to dark gray */
+        color: #0f0e0e; /* Set input text color to white */
+      }
+  
+      input:focus, textarea:focus {
+        outline: none;
+        background-color: silver; /* Set input background color on focus */
+      }
+  
+      span {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #232121; /* Set placeholder text color */
+        transition: 0.3s;
+      }
+  
+      input:focus + span, textarea:focus + span, input:valid + span, textarea:valid + span {
+        top: 5px;
+        font-size: 12px;
+        color: #ddd; /* Change placeholder color on focus and when there is content */
+      }
+  
+      .inputbox input[type="submit"] {
+        background-color: goldenrod; /* Set submit button color to a shade of blue */
+        color: #fff; /* Set submit button text color to white */
+        cursor: pointer;
+      }
+  
+      .inputbox input[type="submit"]:hover {
+        background-color: #0f75bc; /* Darker shade on hover */
+      }
+
+
+
+
+      /*----Responsive---*/
+      
+     
+        
+
+
+
+    /*media 360 to 700px */
+
+    @media (min-width: 100px) and (max-width: 1200px) {
+        .header img {
+            height: 95px;
+            max-width: 95px;
+            display: inline-flex;
+        }
+    
+        #vino{
+            font-size: 30px;
+            display: inline;
+            position: absolute;
+            top: 5%;
+            left: 80px;
+            
+        }
+    #jel{
+        font-size: 30px;
+            display: inline;
+            position: absolute;
+            top: 5%;
+            left: 215px;
+
+    }
+        .nav {
+            padding: 2% 3%; /* Adjusted padding for smaller screens */
+        }
+    
+        .nav-links ul li {
+            bottom: 0;
+            left: 0;
+        }
+    
+        .textbox h1 {
+            font-size: 40px; /* Adjusted font size for smaller screens */
+        }
+    
+        .textbox p {
+            font-size: 14px; /* Adjusted font size for smaller screens */
+        }
+    
+        .button1 {
+            padding: 10px 20px; /* Adjusted padding for smaller screens */
+            font-size: 12px; /* Adjusted font size for smaller screens */
+        }
+    }
+    
+    /*section 2*/
+
+    @media (max-width: 768px) {
+        .models {
+            width: 90%;
+        }
+    
+        .col1 {
+            flex-basis: calc(48% - 20px);
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .models {
+            width: 100%;
+            padding-top: 50px;
+        }
+    
+        .col1 {
+            flex-basis: calc(100% - 20px);
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .row1 {
+          flex-direction: column;
+          align-items: center;
+        }
+      
+        .cols1, .col2, .col3 {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        .col4{
+            margin-left: 150px;
+            
+        }
+      }
+
+    
+
+/* styles.css */
+/* ... Your previous styles ... */
+
+  /* Add your styles here */
+  @media (max-width: 1200px) {
+    #jel{
+        display: flex;
+    }
+    #openBtn {
+      display: block;
+      color: #fff;
+      position: absolute;
+      top: 6%;
+      right: 100px;
+    }
+
+    #closeBtn {
+      display: none;
+    }
+
+    #navLinks {
+      padding-top: 20px;
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: #333;
+      overflow-x: hidden;
+      transition: 0.5s;
+      color: #fff;
+      z-index: 1;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: rgb(235, 228, 20);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index:2; 
+    
+        }
+        .rows{
+            flex-direction:column;
+    } 
+}
+
+    #navLinks.show {
+      width: 100%;
+    }
+
+    #mainContent {
+      margin-left: 0;
+    }
+  
+
+  @media (min-width: 1200px) {
+    #openBtn {
+      display: none;
+    }
+
+    #closeBtn {
+      
+      color: #fff;
+    }
+  }
+
+
+  /* 100 to 540 */
+  @media (min-width: 355px) and (max-width: 540px) {
+    .header img {
+        height: 70px;
+        max-width: 65px;
+        display: inline-flex;
+    }
+
+    #vino{
+        font-size: 15px;
+        display: inline;
+        position: absolute;
+        top: 5%;
+        left: 60px;
+        
+    }
+#jel{
+    font-size: 15px;
+        display: inline;
+        position: absolute;
+        top: 5%;
+        left: 130px;
+
+}
+#openBtn {
+    display: block;
+    color: #fff;
+    position: absolute;
+    top: 5.5%;
+    right: 80px;
+  }
+}
+
+  /* 100 to 540 */
+  @media (min-width: 150px) and (max-width: 355px) {
+    .header img {
+        height: 40px;
+        max-width: 45px;
+        display: inline-flex;
+        position: absolute;
+        top: 2%;
+    }
+
+    #vino{
+        font-size: 8px;
+        display: inline;
+        position: absolute;
+        top: 5%;
+        left: 34px;
+        
+    }
+#jel{
+    font-size: 8px;
+        display: inline;
+        position: absolute;
+        top: 5%;
+        left: 70px;
+
+}
+#openBtn {
+    display: block;
+    color: #fff;
+    position: absolute;
+    top: 5%;
+    right: 18px;
+   
+  }
+  .col4{
+    margin-left: 220px;
+  }
+}
+
+
+
+
+
+
+  /*customer*/
+  /* Media query for smaller screens */
+  @media screen and (max-width: 1200px) and (min-width: 100px) {
+    .customer {
+      padding-top: 50px;
+    }
+  
+    .custom {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cust1 {
+      flex-basis: 80%;
+      margin-bottom: 50px;
+      border-radius: 10px;
+      padding-bottom: 50px;
+    }
+  
+    .cust1 h3 {
+      position: static;
+      margin-top: 12px;
+      left: auto;
+      text-align: center;
+      color: black;
+    }
+  
+    #cus2 {
+      left: auto;
+      color: black;
+      text-align: center;
+    }
+  
+    .star,
+    #star1 {
+      position: static;
+      margin-left: auto;
+      margin-top: 10px;
+      color: goldenrod;
+    }
+  
+    .contactform {
+      position: static;
+      left: auto;
+      top: auto;
+    }
+  }
+  @media screen and (max-width: 1300px) and (min-width: 1199px) {
+    .cust1 h3 {
+        position: static;
+        margin-top: 12px;
+        left: auto;
+        text-align: left;
+        color: black;
+      }
+    
+      #cus2 {
+        left: auto;
+        color: black;
+        text-align: left;
+      }
+
+  }
+
+  /* Existing Media Queries */
+
+@media (max-width: 1200px) {
+  .models {
+      width: 90%;
+  }
+
+  .col1 {
+      flex-basis: calc(48% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .models {
+      width: 100%;
+      padding-top: 50px;
+  }
+
+  .col1 {
+      flex-basis: calc(100% - 20px);
+  }
+}
+
+/* New Media Query for screens between 1200px and 900px */
+@media (max-width: 300px) {
+  .orders h1 {
+      font-size: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .orders {
+      width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .row1 {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  /* Adjusted width for columns */
+  .cols1,
+  .col2,
+  .col3,
+  .col4 {
+      width: 100%;
+  }
+
+  /* Adjusted margin for col4 */
+  .col4 {
+      margin-left: 0;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .offer {
+      width: 90%;
+  }
+
+  .off {
+      flex-direction: column; /* Adjusted to display in a column on smaller screens */
+      align-items: center; /* Center items in a column */
+  }
+
+  /* Adjusted margin for better spacing between images on smaller screens */
+  .offer1 img,
+  .del img,
+  .loan img {
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .offer {
+      width: 90%;
+  }
+
+  .off {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .offer1 img,
+  .del img,
+  .loan img {
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .off {
+      padding: 20px;
+  }
+
+  .offer1 img,
+  .del img,
+  .loan img {
+      max-width: 100%;
+      height: auto;
+  }
+}
+
+
+
+/* Styling for screens from 100px to 800px */
+@media only screen and (max-width: 800px) {
+  .about {
+    width: 100%;
+  }
+
+  .contact {
+    padding: 10px;
+  }
+
+  .contact .detail .box {
+    margin-bottom: 10px;
+  }
+
+  .contact .detail .box .icon {
+    min-width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .contact .detail .box .text {
+    margin-left: 5px;
+    font-size: 10px;
+  }
+  .contactform{
+    width: 80%;
+  }
+}
+
+
+#de{
+  padding: 1px;
+  background-color: goldenrod;
+  color: #0f0e0e;
+  display: flex;
+}
+#cp{
+  
+  position: relative;
+  left: 1200px;
+  bottom:21px;
+}
+#pr{
+  color: #0f0e0e;
+  text-align: center;
+  position: relative;
+  bottom:15px;
+}
+@media (max-width: 1200px) {
+  #cp{
+  
+    position: relative;
+    left: 700px;
+    bottom:21px;
+  }
+
+}
+@media only screen and (max-width: 800px) {
+  #cp{
+  
+    position: relative;
+    left: 200px;
+    bottom:21px;
+  }
+
+}
+@media only screen and (max-width: 300px) {
+  #cp{
+  
+    position: relative;
+    left: 130px;
+    bottom:21px;
+    font-size: 10px;
+  }
+}
+
+
+
+
+
+/* Updated CSS for left to right spinning with further reduced size */
+.coin-button {
+  position: fixed;
+  bottom: 0;
+  left: 90%;
+  transform: translateX(-50%);
+  transition: bottom 0.5s ease-in-out;
+  text-decoration: none; /* Remove underline for links */
+}
+
+.falling {
+  animation: fallAnimation 2s ease-out;
+}
+
+.spin {
+  animation: spinAnimation 5s infinite linear; /* Adjust duration (e.g., 5s) as needed */
+}
+
+@keyframes spinAnimation {
+  from {
+    transform: rotateY(0deg) scale(0.7); /* Adjust scale value for the desired size */
+  }
+  to {
+    transform: rotateY(360deg) scale(0.7); /* Adjust scale value for the desired size */
+  }
+}
+
+@keyframes fallAnimation {
+  0% {
+    transform: translateY(-100vh) translateX(1%);
+  }
+  100% {
+    transform: translateY(0) translateX(1%);
+  }
+}

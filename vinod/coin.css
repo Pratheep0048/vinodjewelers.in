@@ -1,0 +1,27 @@
+/* Updated CSS for left to right spinning with further reduced size */
+.coin-button {
+    position: fixed;
+    bottom: 0;
+    left: 8%;
+    transform: translateX(-50%);
+    transition: bottom 0.5s ease-in-out;
+    text-decoration: none; /* Remove underline for links */
+  }
+  
+  .falling {
+    animation: fallAnimation 2s ease-out;
+  }
+  
+  .spin {
+    animation: spinAnimation 5s infinite linear; /* Adjust duration (e.g., 5s) as needed */
+  }
+  
+  @keyframes spinAnimation {
+    from {
+      transform: rotateY(0deg) scale(0.3); /* Adjust scale value for the desired size */
+    }
+    to {
+      transform: rotateY(360deg) scale(0.3); /* Adjust scale value for the desired size */
+    }
+  }
+  
